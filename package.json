@@ -1,0 +1,26 @@
+{
+    "name": "littledb",
+    "version": "1.0.0",
+    "description": "lowdb sample for 1.125",
+    "main": "index.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node index.js",
+        "server": "nodemon index.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "abel@mit.edu",
+    "license": "MIT",
+    "dependencies": {
+        "concurrently": "^6.3.0",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "firebase": "^9.5.0",
+        "lowdb": "^1.0.0",
+        "mongodb": "^3.6.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
